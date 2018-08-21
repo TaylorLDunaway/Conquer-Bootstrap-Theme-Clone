@@ -16,10 +16,12 @@
                  <li><a href="#services" >Services</a></li>
                  <li><a href="#" >Contact</a></li>
                  <li><a href="#" >External</a></li>
+                 <li class="icon"><a href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
             </ul>
         </nav>
         <div id="home">
             <img class="mainImg" src="assets/bg-1.jpg" alt="Background image of forest">
+            <h1>CONQUER</h1>
         </div>
         <div class="colRow" id="about">
             <div class="col">
@@ -97,9 +99,31 @@
         <div class="formImg">
             <form action="/" >
                 <h1>Contact Form</h1>
+                <div class="pDiv">
+                    <p>Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. <br>Sed id felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia.<br>Etiam a mi quis arcu varius condimentum.</p>
+                </div>
+                <div class="formContainer">
+                    <div class="formInputs">
+                        <input class="formInput" type="text" id="name" placeholder="Name"/>
+                        <input class="formInput" type="email" id="email" placeholder="Email"/>
+                        <input class="formInput" type="text" id="subject" placeholder="Subject"/>
+                    </div>
+                    <div class="formInputs">
+                        <textarea id="textArea" placeholder="Your message here..."></textarea>
+                        <input type="submit" class="blackBtn" id=submitBtn value="Send"/>
+                    </div>
+                </div>  
             </form>
         </div>
         <footer>
+            <div class="topHeadingFooter">
+                <span>Use it free!</span><br>
+            </div>
+            
+            <div class="lowerHeadingFooter">
+                <span>“Conquer is free Bootstrap template from templatemo website.<br>
+                    No backlink is required to use this layout.”</span>
+            </div>
             <hr>
             <p>Copyright © 2084 Your Company Name | Design: Templatemo</p>
         </footer>
@@ -107,14 +131,5 @@
         <script src="scripts/script.js"></script>
 
     </body>
-
-
-
-
-
-
-
-
-
 
 </html>

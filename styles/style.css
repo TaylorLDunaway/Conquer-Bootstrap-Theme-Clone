@@ -3,6 +3,7 @@ html, body {
     padding: 0;
 }
 
+
 /* Flex box */
 
 @media screen and (min-width: 600px){
@@ -12,6 +13,11 @@ html, body {
     flex-direction: row;
 
 }
+    
+    .icon {
+        display: none;
+    }
+    
 }
 
 @media screen and (max-width: 600px){
@@ -21,6 +27,12 @@ html, body {
         flex-direction: column;
         
 }
+    
+    .topNav li:not(:first-child):not(:last-child) {display: none;}
+    
+    .topNav .icon {
+        display: block;
+    }
 }
 
 
@@ -30,6 +42,20 @@ html, body {
     background-color: rgb(242, 242, 242);
     margin: 1%;
     text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .topNav.responsive {position: relative;}
+  .topNav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topNav.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 .col > p {
@@ -43,6 +69,8 @@ a {
     
 }
 
+/* nav bar styles */
+
 nav {
     background-color: #383E4C;
     /* fix the nav bar at the top of the screen */
@@ -51,6 +79,11 @@ nav {
     width: 100%;
 }
 
+.topNav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 
 nav > ul > li {
     /* li elements are block by default. Make them inline to create horizontal list */
@@ -77,10 +110,21 @@ nav > ul > li:hover {
     background-color: gray;
 }
 
+/* Style for the main home image */
 .mainImg {
     width: 100%;
 }
 
+/* Header styles */
+h1 {
+    text-align: center;
+    color:whitesmoke;
+}
+
+h2 {
+    text-align: center;
+    color: whitesmoke;
+}
 
 h3 {
     text-align: center;
@@ -104,6 +148,11 @@ h3 {
     background-color: gray;
 }
 
+.blackBtn {
+    background-color: black;
+    color: whitesmoke;
+}
+
 button {
     margin: 0 auto;
     margin-bottom: 1%;
@@ -115,13 +164,77 @@ button {
 }
 
 /* Contact Form Styling */
+form {
+   margin: 0 auto;
+    width: 60%;
+}
+
 .formImg {
     background-image: url("../assets/bg-3.jpg");
     min-height: 930px;
         
 }
 
+.formInputs {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    width: 100%;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.pDiv {
+    background-color: rgba(242, 242, 242, 0.3);
+    text-align: center;
+    border-radius: 12px;
+    padding: 1%
+}
+
+.formInput {
+    background-color: rgba(242, 242, 242, 0.3);
+    margin: 1%;
+    border: none;
+}
+
+form > div {
+    margin: 2%;
+}
+
+form > div textarea {
+    background-color: rgba(242, 242, 242, 0.3);
+    margin: 7%;
+    border: none;
+   
+}
+
+#submitBtn {
+    border-radius: 12px;
+    width: 120px;
+    height: 40px;
+    font-size: 24px;
+}
+
+/* Footer styles */
+
 footer {
     text-align: center;
+}
+
+.topHeadingFooter span {
+    color: black;
+    font-size: 45px;
+    font-style: italic
+}
+
+.lowerHeadingFooter span {
+    color: gray;
+    font-size: 14px;
+    font-style: italic
 }
 
